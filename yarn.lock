@@ -5960,7 +5960,7 @@ nodebb-plugin-emoji-apple@2.0.5:
     emoji-datasource-apple "^3.0.0"
     lodash.frompairs "^4.0.1"
 
-nodebb-plugin-emoji-extended@*:
+nodebb-plugin-emoji-extended@1.1.1+1238:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/nodebb-plugin-emoji-extended/-/nodebb-plugin-emoji-extended-1.1.1.tgz#33e2bcd7351615f4fb84958f662cb912a5b206d5"
   integrity sha1-M+K81zUWFfT7hJWPZiy5EqWyBtU=
@@ -6012,7 +6012,7 @@ nodebb-plugin-markdown@8.12.4:
     markdown-it-checkbox "^1.1.0"
     markdown-it-multimd-table "^4.0.1"
 
-nodebb-plugin-mega-colors@*:
+nodebb-plugin-mega-colors@0.10.24:
   version "0.10.24"
   resolved "https://registry.yarnpkg.com/nodebb-plugin-mega-colors/-/nodebb-plugin-mega-colors-0.10.24.tgz#5c2a671559bb9327f2ee70cc7e2ef56d36346e94"
   integrity sha1-XCpnFVm7kyfy7nDMfi71bTY0bpQ=

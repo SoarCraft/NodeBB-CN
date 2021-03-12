@@ -16,6 +16,24 @@
     "coverage": "nyc report --reporter=text-lcov > ./coverage/lcov.info",
     "coveralls": "nyc report --reporter=text-lcov | coveralls && rm -r coverage"
   },
+  "nyc": {
+    "exclude": [
+      "src/upgrades/*",
+      "test/*"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npx lint-staged",
+      "commit-msg": "npx commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
   "dependencies": {
     "@adactive/bootstrap-tagsinput": "^0.8.2",
     "@nodebb/bootswatch": "3.4.2",
@@ -80,12 +98,12 @@
     "nodebb-plugin-emoji": "^3.3.0",
     "nodebb-plugin-emoji-android": "2.0.0",
     "nodebb-plugin-emoji-apple": "2.0.5",
-    "nodebb-plugin-emoji-extended": "*",
+    "nodebb-plugin-emoji-extended": "1.1.1+1238",
     "nodebb-plugin-emoji-one": "2.0.5",
     "nodebb-plugin-google-analytics": "0.5.11",
     "nodebb-plugin-imagemagick": "2.1.1",
     "nodebb-plugin-markdown": "8.12.4",
-    "nodebb-plugin-mega-colors": "*",
+    "nodebb-plugin-mega-colors": "0.10.24",
     "nodebb-plugin-mentions": "2.13.6",
     "nodebb-plugin-newsletter": "0.9.2",
     "nodebb-plugin-recent-cards": "2.0.16",
@@ -189,23 +207,5 @@
       "email": "baris@nodebb.org",
       "url": "https://github.com/barisusakli"
     }
-  ],
-  "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npx lint-staged",
-      "commit-msg": "npx commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
-  "nyc": {
-    "exclude": [
-      "src/upgrades/*",
-      "test/*"
-    ]
-  }
+  ]
 }
