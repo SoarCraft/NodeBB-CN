@@ -15,24 +15,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@master
-
-      - name: Set up Node.js version
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14.x'
-
-      - name: Cache node modules
-        uses: actions/cache@v2
-        id: cache
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-      - name: Install Dependencies
-        if: steps.cache.outputs.cache-hit != 'true'
-        run: yarn --frozen-lockfile
-
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
         with:
