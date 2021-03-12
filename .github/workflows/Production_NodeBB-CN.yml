@@ -31,10 +31,11 @@ jobs:
             ${{ runner.os }}-node-
       - name: Install Dependencies
         if: steps.cache.outputs.cache-hit != 'true'
-        run: yarn
+        run: npm ci
 
-      - name: npm build, and test
+      - name: npm instll, build, and test
         run: |
+          yarn
           npm run build --if-present
           npm run test --if-present
 
