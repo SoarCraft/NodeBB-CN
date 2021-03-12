@@ -4,13 +4,6 @@
   "database": "mongo",
   "port": "80",
   "mongo": {
-	"host": "nodebb-shard-00-02.qr0h3.mongodb.net",
-	"port": "27017",
-	"username": "NodeCN",
-	"password": "#123Q-Audio",
-	"database": "NodeCN"
-  },
-  "test_database": {
 	"host": "nodebb-shard-00-02.qr0h3.mongodb.net,nodebb-shard-00-01.qr0h3.mongodb.net,nodebb-shard-00-00.qr0h3.mongodb.net",
 	"port": "27017,27017,27017",
 	"username": "NodeCN",
