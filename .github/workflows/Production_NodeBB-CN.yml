@@ -29,10 +29,9 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-
-      - uses: borales/actions-yarn@v2.0.0
-        with:
-          cmd: install
+      - name: Install Dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: yarn
 
       - name: npm build, and test
         run: |
