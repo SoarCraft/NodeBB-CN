@@ -48,6 +48,8 @@ connection.getConnectionOptions = function (mongo) {
 		connectTimeoutMS: 90000,
 		useNewUrlParser: true,
 		useUnifiedTopology: true,
+		ssl: true,
+		authSource: 'admin',
 	};
 
 	return _.merge(connOptions, mongo.options || {});
