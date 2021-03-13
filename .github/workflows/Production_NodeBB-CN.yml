@@ -19,17 +19,17 @@ jobs:
     - uses: azure/docker-login@v1
       with:
         login-server: https://nodebbcn.azurecr.io/
-        username: ${{ secrets.AzureAppService_ContainerUsername_5c430a73958443c4ac725292dbfb337b }}
-        password: ${{ secrets.AzureAppService_ContainerPassword_b568c867611a4fc7aea40ff27abbea79 }}
+        username: ${{ secrets.AzureAppService_ContainerUsername_13dea954626d4e37874fe0b277b05d2d }}
+        password: ${{ secrets.AzureAppService_ContainerPassword_cf4db190bc6746e0aa6fb1fc3013e066 }}
 
     - run: |
-        docker build . -t nodebbcn.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_5c430a73958443c4ac725292dbfb337b }}/nodebb-cn:${{ github.sha }}
-        docker push nodebbcn.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_5c430a73958443c4ac725292dbfb337b }}/nodebb-cn:${{ github.sha }}
+        docker build . -t nodebbcn.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_13dea954626d4e37874fe0b277b05d2d }}/nodebb-cn:${{ github.sha }}
+        docker push nodebbcn.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_13dea954626d4e37874fe0b277b05d2d }}/nodebb-cn:${{ github.sha }}
 
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
       with:
         app-name: 'NodeBB-CN'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_fa39787ca5e445d4bf0b1499889fde72 }}
-        images: 'nodebbcn.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_5c430a73958443c4ac725292dbfb337b }}/nodebb-cn:${{ github.sha }}'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_e858f8aae55d4be28397c47e92608264 }}
+        images: 'nodebbcn.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_13dea954626d4e37874fe0b277b05d2d }}/nodebb-cn:${{ github.sha }}'
