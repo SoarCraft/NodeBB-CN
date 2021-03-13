@@ -1,5 +1,5 @@
 {
-  "url": "https://nodebb.q-audio.org",
+  "url": "http://nodebb.q-audio.org",
   "secret": "a7088c70-372a-4442-8514-02c9caee9be5",
   "database": "mongo",
   "port": "4567",
