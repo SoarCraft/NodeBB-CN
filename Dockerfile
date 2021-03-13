@@ -8,9 +8,8 @@ ENV NODE_ENV $NODE_ENV
 
 COPY install/package.json /usr/src/app/package.json
 
-RUN npm install --only=prod && \
-    npm cache clean --force
-    
+RUN yarn install
+
 COPY . /usr/src/app
 
 ENV NODE_ENV=production \

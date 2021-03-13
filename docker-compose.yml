@@ -5,20 +5,17 @@ services:
     build: .
     restart: unless-stopped
     depends_on:
-      - db
+      - proxy
     expose:
-      - 4567 # use a reverse proxy like Traefik
+      - 4567
 
-  db:
-    image: mongo:bionic
+  proxy:
+    build: ./nginx
+    image: nginx
     restart: unless-stopped
+    ports:
+      - 80:80
+      - 443:443
     expose:
-      - 27017
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: root
-    volumes:
-      - mongo:/data/db
-
-volumes:
-  mongo:
+      - 80
+      - 443
