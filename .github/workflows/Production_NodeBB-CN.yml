@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Node.js app to Azure Web App - NodeBB-CN
+name: Build and deploy container app to Azure Web App - NodeBB-CN
 
 on:
   push:
@@ -11,14 +11,25 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest
+    runs-on: 'ubuntu-latest'
 
     steps:
     - uses: actions/checkout@master
-    - name: 'Deploy to Azure Web App'
+
+    - uses: azure/docker-login@v1
+      with:
+        login-server: https://nodebbcn.azurecr.io/
+        username: ${{ secrets.AzureAppService_ContainerUsername_5c430a73958443c4ac725292dbfb337b }}
+        password: ${{ secrets.AzureAppService_ContainerPassword_b568c867611a4fc7aea40ff27abbea79 }}
+
+    - run: |
+        docker build . -t nodebbcn.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_5c430a73958443c4ac725292dbfb337b }}/nodebb-cn:${{ github.sha }}
+        docker push nodebbcn.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_5c430a73958443c4ac725292dbfb337b }}/nodebb-cn:${{ github.sha }}
+
+    - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
       with:
         app-name: 'NodeBB-CN'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_aeb30e0ab2594883b0935791506a231e }}
-        package: .
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_fa39787ca5e445d4bf0b1499889fde72 }}
+        images: 'nodebbcn.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_5c430a73958443c4ac725292dbfb337b }}/nodebb-cn:${{ github.sha }}'
