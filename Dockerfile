@@ -18,4 +18,4 @@ ENV NODE_ENV=production \
 
 EXPOSE 4567
 
-CMD node ./nodebb build ;  node ./nodebb start
+CMD node ./nodebb build; node ./nodebb start
