@@ -6,10 +6,8 @@ WORKDIR /usr/src/app
 ARG NODE_ENV
 ENV NODE_ENV $NODE_ENV
 
-COPY package.json /usr/src/app/package.json
-RUN yarn
-
 COPY . /usr/src/app
+RUN yarn
 
 ENV NODE_ENV=production \
     daemon=false \
