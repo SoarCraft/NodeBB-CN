@@ -6122,11 +6122,6 @@ nodebb-theme-lavender@5.0.17:
   resolved "https://registry.yarnpkg.com/nodebb-theme-lavender/-/nodebb-theme-lavender-5.0.17.tgz#f877bef2dcd45fbf3a79ba21a6ce14a54c80b381"
   integrity sha512-U8D+309jnqaPJM2gNxhxdqiHhbt+a5+4qvsf51ihRMKH63jdMayKHYSBpDh6s/hGF+ao0ZMDHYIxvNxldOIHTA==
 
-nodebb-theme-material@2.12.9:
-  version "2.12.9"
-  resolved "https://registry.yarnpkg.com/nodebb-theme-material/-/nodebb-theme-material-2.12.9.tgz#1aca87d7c18af9d36906d23cf780047e68dc1969"
-  integrity sha512-K0PI2lfhOGp7NbSfVrHoTz10TsilqlqAmlIGyHwZKNF6Qa8of4+sSkigBLL9IKJ4XfRvOo1ffB5OiEjqXO4ZTw==
-
 nodebb-theme-persona@10.3.19:
   version "10.3.19"
   resolved "https://registry.yarnpkg.com/nodebb-theme-persona/-/nodebb-theme-persona-10.3.19.tgz#541aa2a4660afb53d490e2029a7a26a21808c547"
