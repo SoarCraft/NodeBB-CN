@@ -1,11 +1,4 @@
-FROM node:lts
-
-RUN apt-get update
-RUN apt-get install -q -y ssmtp mailutils
-RUN echo "mailhub=smtpdm.aliyun.com:465" >> /etc/ssmtp/ssmtp.conf
-RUN echo "root=noreply@mail.nodebb-cn.org" >> /etc/ssmtp/ssmtp.conf
-RUN echo "UseTLS=YES" >> /etc/ssmtp/ssmtp.conf
-RUN echo "UseSTARTTLS=YES" >> /etc/ssmtp/ssmtp.conf
+FROM node:lts-alpine
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
