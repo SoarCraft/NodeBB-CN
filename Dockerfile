@@ -8,7 +8,7 @@ ENV NODE_ENV $NODE_ENV
 
 COPY install/package.json /usr/src/app/package.json
 
-RUN yarn install
+RUN yarn install --frozen-lockfile
 
 COPY . /usr/src/app
 
