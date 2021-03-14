@@ -1,4 +1,5 @@
 .idea/
 .git/
 logs/
-elements/
+Backup/
+node_modules/
