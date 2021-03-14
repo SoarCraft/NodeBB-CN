@@ -7,7 +7,6 @@ ARG NODE_ENV
 ENV NODE_ENV $NODE_ENV
 
 COPY . /usr/src/app
-RUN yarn
 
 ENV NODE_ENV=production \
     daemon=false \
