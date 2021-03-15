@@ -6,9 +6,17 @@ services:
     image: NodeBBCN.azurecr.io/nodebb
     restart: unless-stopped
     depends_on:
+      - search
       - proxy
     expose:
       - 4567
+
+  search:
+    build: ./solr
+    image: NodeBBCN.azurecr.io/search
+    restart: unless-stopped
+    expose:
+      - 8983
 
   proxy:
     build: ./nginx
