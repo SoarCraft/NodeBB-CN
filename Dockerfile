@@ -7,7 +7,7 @@ ARG NODE_ENV
 ENV NODE_ENV $NODE_ENV
 
 COPY . /usr/src/app
-RUN apk add git --no-cache && yarn
+RUN apk add --no-cache git && yarn --pnp --production && apk del git && rm -rf /var/cache/apk/*
 
 ENV NODE_ENV=production \
     daemon=false \
