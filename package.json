@@ -94,7 +94,6 @@
     "nodebb-plugin-2factor": "2.9.3",
     "nodebb-plugin-audio-embed": "1.1.7",
     "nodebb-plugin-composer-default": "6.5.5",
-    "nodebb-plugin-dbsearch": "4.1.2",
     "nodebb-plugin-emoji": "^3.3.0",
     "nodebb-plugin-emoji-one": "2.0.5",
     "nodebb-plugin-imagemagick": "2.1.1",

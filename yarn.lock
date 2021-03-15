@@ -894,13 +894,6 @@ anymatch@~3.1.1:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
-"apparatus@>= 0.0.9":
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/apparatus/-/apparatus-0.0.10.tgz#81ea756772ada77863db54ceee8202c109bdca3e"
-  integrity sha512-KLy/ugo33KZA7nugtQ7O0E1c8kQ52N3IvD/XgIh4w/Nr28ypfkwDfA67F1ev4N1m5D+BOk1+b2dEJDfpj/VvZg==
-  dependencies:
-    sylvester ">= 0.0.8"
-
 append-field@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/append-field/-/append-field-1.0.0.tgz#1e3440e915f0b1203d23748e78edd7b9b5b43e56"
@@ -1081,7 +1074,7 @@ astral-regex@^2.0.0:
   resolved "https://registry.yarnpkg.com/astral-regex/-/astral-regex-2.0.0.tgz#483143c567aeed4785759c0865786dc77d7d2e31"
   integrity sha512-Z7tMw1ytTXt5jqMcOP+OQteU1VuNK9Y02uuJtKQ1Sv69jXQKKg5cibLwGJow8yzZP+eAc18EmLGPal0bp36rvQ==
 
-async@^1.4.0, async@^1.4.2, async@~1.5.2:
+async@^1.4.0, async@~1.5.2:
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/async/-/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
   integrity sha1-7GphrlZIDAw8skHJVhjiCJL5Zyo=
@@ -5806,15 +5799,6 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
 
-natural@^0.2.0:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/natural/-/natural-0.2.1.tgz#1eb5156a9d90b4591949e20e94ebc77bb2339eda"
-  integrity sha1-HrUVap2QtFkZSeIOlOvHe7Iznto=
-  dependencies:
-    apparatus ">= 0.0.9"
-    sylvester ">= 0.0.12"
-    underscore ">=1.3.1"
-
 nconf@^0.11.0:
   version "0.11.2"
   resolved "https://registry.yarnpkg.com/nconf/-/nconf-0.11.2.tgz#707fa9db383e85ad7e8f1a17be1b053d1bd751c4"
@@ -5913,14 +5897,6 @@ nodebb-plugin-composer-default@6.5.5:
   dependencies:
     screenfull "^5.0.2"
     validator "^13.1.17"
-
-nodebb-plugin-dbsearch@4.1.2:
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/nodebb-plugin-dbsearch/-/nodebb-plugin-dbsearch-4.1.2.tgz#1b85ad3258cb7a572fa55b4fbf892ab1a0d04758"
-  integrity sha512-huhy51KHFuU/7zdFPAwLgdnrRIDPLUK4xZLqZ4LpfQbiG7yO+ICw0Rapo+RCeuMUeeI5J5U//zqErlYSsGif6A==
-  dependencies:
-    lodash "4.17.19"
-    redisearch "0.0.11"
 
 nodebb-plugin-emoji-one@2.0.5:
   version "2.0.5"
@@ -7347,20 +7323,6 @@ redis@3.0.2, redis@^3.0.0:
     redis-errors "^1.2.0"
     redis-parser "^3.0.0"
 
-redis@^0.12.1:
-  version "0.12.1"
-  resolved "https://registry.yarnpkg.com/redis/-/redis-0.12.1.tgz#64df76ad0fc8acebaebd2a0645e8a48fac49185e"
-  integrity sha1-ZN92rQ/IrOuuvSoGReikj6xJGF4=
-
-redisearch@0.0.11:
-  version "0.0.11"
-  resolved "https://registry.yarnpkg.com/redisearch/-/redisearch-0.0.11.tgz#5ebd0852bd61a69939de98058f1a7674a9d6faf0"
-  integrity sha512-c6UmsOfqgVB2xOLXwLBpl89BUtUbT9WV5VE2aenKjkPcDB+HnY/VG64tbrSP0SgDclUf0rURf2cJTvIRCPoxkA==
-  dependencies:
-    async "^1.4.2"
-    natural "^0.2.0"
-    redis "^0.12.1"
-
 regenerator-runtime@^0.13.4:
   version "0.13.7"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.7.tgz#cac2dacc8a1ea675feaabaeb8ae833898ae46f55"
@@ -8372,11 +8334,6 @@ supports-color@^5.3.0, supports-color@^5.4.0:
   dependencies:
     has-flag "^3.0.0"
 
-"sylvester@>= 0.0.12", "sylvester@>= 0.0.8":
-  version "0.0.21"
-  resolved "https://registry.yarnpkg.com/sylvester/-/sylvester-0.0.21.tgz#2987b1ce2bd2f38b0dce2a34388884bfa4400ea7"
-  integrity sha1-KYexzivS84sNzio0OIiEv6RADqc=
-
 symbol-tree@^3.2.4:
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.4.tgz#430637d248ba77e078883951fb9aa0eed7c63fa2"
@@ -8820,7 +8777,7 @@ underscore.string@~3.3.5:
     sprintf-js "^1.0.3"
     util-deprecate "^1.0.2"
 
-underscore@>=1.3.1, underscore@^1.8.2:
+underscore@^1.8.2:
   version "1.12.0"
   resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.12.0.tgz#4814940551fc80587cef7840d1ebb0f16453be97"
   integrity sha512-21rQzss/XPMjolTiIezSu3JAjgagXKROtNrYFEOWK109qY1Uv2tVjPTZ1ci2HgvQDA16gHYSthQIJfB+XId/rQ==
