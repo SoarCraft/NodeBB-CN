@@ -3,6 +3,7 @@
 .tx/
 logs/
 Backup/
+build/
 nginx/
 node_modules/
 test/

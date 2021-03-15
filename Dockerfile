@@ -7,7 +7,7 @@ ARG NODE_ENV
 ENV NODE_ENV $NODE_ENV
 
 COPY . /usr/src/app
-RUN apk add --no-cache git && yarn --pnp --production && apk del git && rm -rf /var/cache/apk/*
+RUN apk add --no-cache git && yarn --pnp --production
 
 ENV NODE_ENV=production \
     daemon=false \
@@ -15,4 +15,4 @@ ENV NODE_ENV=production \
 
 EXPOSE 4567
 
-CMD node ./nodebb start
+CMD node ./nodebb build && node ./nodebb start
