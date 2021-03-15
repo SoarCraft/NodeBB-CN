@@ -12,9 +12,12 @@ services:
       - 4567
 
   search:
-    build: ./solr
-    image: NodeBBCN.azurecr.io/search
+    image: solr:alpine
     restart: unless-stopped
+    entrypoint:
+      - docker-entrypoint.sh
+      - solr-precreate
+      - nodebb
     expose:
       - 8983
 
