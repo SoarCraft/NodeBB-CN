@@ -4,7 +4,7 @@
 logs/
 Backup/
 nginx/
-solr/
+node_modules/
 test/
 .codeclimate.yml
 .deployment
