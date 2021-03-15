@@ -824,13 +824,6 @@ ajv@^7.0.2:
     require-from-string "^2.0.2"
     uri-js "^4.2.2"
 
-akismet@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/akismet/-/akismet-1.0.0.tgz#a8a6f42ad07af66d738967a87e408e17189bfd85"
-  integrity sha1-qKb0KtB69m1ziWeofkCOFxib/YU=
-  dependencies:
-    request "2.x"
-
 aliyun-sdk@^1.11.0:
   version "1.12.3"
   resolved "https://registry.yarnpkg.com/aliyun-sdk/-/aliyun-sdk-1.12.3.tgz#251464dd5b2c4e2b36cea00fc8b401b5b6f70ec7"
@@ -2645,16 +2638,6 @@ electron-to-chromium@^1.3.649:
   version "0.0.7"
   resolved "git+https://github.com/Mango/emitter.git#41ab8a3956269c7ed468bde50203e15b3274152f"
 
-emoji-datasource-apple@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/emoji-datasource-apple/-/emoji-datasource-apple-3.0.0.tgz#1e5eb0443d0a9e20ec3ed01e77114ce601b19cec"
-  integrity sha1-Hl6wRD0KniDsPtAedxFM5gGxnOw=
-
-emoji-datasource-google@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/emoji-datasource-google/-/emoji-datasource-google-3.0.0.tgz#d6f77b56385338e10667d2b150dbe9f9b5a4e921"
-  integrity sha1-1vd7VjhTOOEGZ9KxUNvp+bWk6SE=
-
 emoji-regex@^7.0.1:
   version "7.0.3"
   resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-7.0.3.tgz#933a04052860c85e83c122479c4748a8e4c72156"
@@ -4044,11 +4027,6 @@ hasha@^5.0.0:
     is-stream "^2.0.0"
     type-fest "^0.8.0"
 
-hcaptcha@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/hcaptcha/-/hcaptcha-0.0.1.tgz#e8c5e25a943083d06630bf077bae8a3053fa3da5"
-  integrity sha512-xGU7wSg3BENwEsOplfMghyR7SL/AXKllmCRMkmt3WQHxhINVNs2u7pP7V5FhigNFBNt6zz32GDRzLqfeDzqPyA==
-
 he@1.2.0, he@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
@@ -5259,7 +5237,7 @@ lodash@4.17.19:
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
   integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
 
-lodash@^4.17.10, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.21, lodash@^4.3.0, lodash@~4.17.10, lodash@~4.17.19, lodash@~4.17.20:
+lodash@^4.17.10, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.21, lodash@~4.17.10, lodash@~4.17.19, lodash@~4.17.20:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
@@ -5944,30 +5922,6 @@ nodebb-plugin-dbsearch@4.1.2:
     lodash "4.17.19"
     redisearch "0.0.11"
 
-nodebb-plugin-emoji-android@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/nodebb-plugin-emoji-android/-/nodebb-plugin-emoji-android-2.0.0.tgz#35bd578d8a1e3fedb5e8267b2f2581d89c50e217"
-  integrity sha512-6pDXSbdKPNfD9JiZyWQHgLOIN06PiLbNTh6O8+424mTM07NYy9+RSCgsF06c+Ov06A1EUgKB0N8T98HvY0hqsg==
-  dependencies:
-    emoji-datasource-google "^3.0.0"
-    lodash.frompairs "^4.0.1"
-
-nodebb-plugin-emoji-apple@2.0.5:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/nodebb-plugin-emoji-apple/-/nodebb-plugin-emoji-apple-2.0.5.tgz#5c64fee8d0621d99890cb4ba93cfcaacbf354148"
-  integrity sha512-GW6/Wmo6gWTdxuRkckbsKzoaPTqiCgSdvdZ336Uxmb+qV5nd1EarWeWuHmr8QU0mYJc2W6KdF1wU9Fpy86uXQw==
-  dependencies:
-    emoji-datasource-apple "^3.0.0"
-    lodash.frompairs "^4.0.1"
-
-nodebb-plugin-emoji-extended@1.1.1+1238:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/nodebb-plugin-emoji-extended/-/nodebb-plugin-emoji-extended-1.1.1.tgz#33e2bcd7351615f4fb84958f662cb912a5b206d5"
-  integrity sha1-M+K81zUWFfT7hJWPZiy5EqWyBtU=
-  dependencies:
-    lodash "^4.3.0"
-    q "^1.4.1"
-
 nodebb-plugin-emoji-one@2.0.5:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/nodebb-plugin-emoji-one/-/nodebb-plugin-emoji-one-2.0.5.tgz#3baa501695da9c8ee7087095c300503a62b0aec4"
@@ -5986,13 +5940,6 @@ nodebb-plugin-emoji@^3.3.0:
     fs-extra "^9.1.0"
     lodash "^4.17.21"
     multer "^1.4.2"
-
-nodebb-plugin-google-analytics@0.5.11:
-  version "0.5.11"
-  resolved "https://registry.yarnpkg.com/nodebb-plugin-google-analytics/-/nodebb-plugin-google-analytics-0.5.11.tgz#aa5bc069b5f0497a6841c6c70e40be21da4a1659"
-  integrity sha512-U78aJj7sgRlMIUJxWkPjsZIMDBk5iRTjYEmo4apgi72EEuKdkp+KwRjGm2BqhTzdC5DA+ukFbzldKhc2zsaYDw==
-  dependencies:
-    path "~0.4.9"
 
 nodebb-plugin-imagemagick@2.1.1:
   version "2.1.1"
@@ -6064,23 +6011,6 @@ nodebb-plugin-solr@5.2.9:
     lru-cache "^4.1.5"
     solr-client "^0.7.1"
 
-nodebb-plugin-soundpack-default@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/nodebb-plugin-soundpack-default/-/nodebb-plugin-soundpack-default-1.0.0.tgz#83eaf553e67df07e365f59886653ff63eb676399"
-  integrity sha1-g+r1U+Z98H42X1mIZlP/Y+tnY5k=
-
-nodebb-plugin-spam-be-gone@0.7.7:
-  version "0.7.7"
-  resolved "https://registry.yarnpkg.com/nodebb-plugin-spam-be-gone/-/nodebb-plugin-spam-be-gone-0.7.7.tgz#454a023fdbddb76a1b3374704225f28ae577e77b"
-  integrity sha512-djXOyORCAn6Gn6n2DFHKRmXZdsix0K5MnToZsvoFGhyVjgX2hQlJ/JH0Ti5mjwhXZOcoOfaVjxVH9eAxQHzflw==
-  dependencies:
-    akismet "^1.0.0"
-    async "^3.2.0"
-    hcaptcha "^0.0.1"
-    project-honeypot "~0.0.0"
-    simple-recaptcha-new "^1.1.1"
-    stopforumspam "^1.1.0"
-
 nodebb-plugin-sso-github@2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/nodebb-plugin-sso-github/-/nodebb-plugin-sso-github-2.3.0.tgz#2b8d6980eeb84d9e4efe2b7dab277a5f23454305"
@@ -6117,11 +6047,6 @@ nodebb-rewards-essentials@0.1.4:
   resolved "https://registry.yarnpkg.com/nodebb-rewards-essentials/-/nodebb-rewards-essentials-0.1.4.tgz#133d5c3eb8c62f088b67aae35b9af249e6d63189"
   integrity sha512-veXmAUzliJdGeJKc4P0On/rlONcymkauVRftIUBbie6cmhIe7Ab/JQHeWiAMN18AGt6P00fWZlE1tosZC9M5OQ==
 
-nodebb-theme-lavender@5.0.17:
-  version "5.0.17"
-  resolved "https://registry.yarnpkg.com/nodebb-theme-lavender/-/nodebb-theme-lavender-5.0.17.tgz#f877bef2dcd45fbf3a79ba21a6ce14a54c80b381"
-  integrity sha512-U8D+309jnqaPJM2gNxhxdqiHhbt+a5+4qvsf51ihRMKH63jdMayKHYSBpDh6s/hGF+ao0ZMDHYIxvNxldOIHTA==
-
 nodebb-theme-persona@10.3.19:
   version "10.3.19"
   resolved "https://registry.yarnpkg.com/nodebb-theme-persona/-/nodebb-theme-persona-10.3.19.tgz#541aa2a4660afb53d490e2029a7a26a21808c547"
@@ -6129,16 +6054,6 @@ nodebb-theme-persona@10.3.19:
   dependencies:
     pulling "^2.0.0"
     striptags "^3.1.1"
-
-nodebb-theme-slick@1.3.8:
-  version "1.3.8"
-  resolved "https://registry.yarnpkg.com/nodebb-theme-slick/-/nodebb-theme-slick-1.3.8.tgz#65bfbdebb810fd02ddb8bc4e09448640a22794a4"
-  integrity sha512-GS0fgNYInx2HVEZrvFMlroWtS2rp5BH4/JqbrMS7BwTAha+PJjF50aLJkhv9z7JMGnMoQEVAEDSs6/estZNf9g==
-
-nodebb-theme-vanilla@11.3.10:
-  version "11.3.10"
-  resolved "https://registry.yarnpkg.com/nodebb-theme-vanilla/-/nodebb-theme-vanilla-11.3.10.tgz#44c7985265f8dc06d81948701908cb12056a2640"
-  integrity sha512-vwnU4r6zbWS51lUh1moW7f2GMQNNZH5zvBxO1X07SF+Us8yKOufhtaAi0IFsix87bH4DlF6dhNFdTp9XgxLgeA==
 
 nodebb-widget-essentials@5.0.2:
   version "5.0.2"
@@ -6824,11 +6739,6 @@ path-type@^4.0.0:
   resolved "https://registry.yarnpkg.com/path-type/-/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
 
-path@~0.4.9:
-  version "0.4.10"
-  resolved "https://registry.yarnpkg.com/path/-/path-0.4.10.tgz#22fef27b7cd6eaf30fb13fc027801e956e518ef1"
-  integrity sha1-Iv7ye3zW6vMPsT/AJ4AelW5RjvE=
-
 pause-stream@~0.0.11:
   version "0.0.11"
   resolved "https://registry.yarnpkg.com/pause-stream/-/pause-stream-0.0.11.tgz#fe5a34b0cbce12b5aa6a2b403ee2e73b602f1445"
@@ -7113,11 +7023,6 @@ progress@^2.0.0:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-project-honeypot@~0.0.0:
-  version "0.0.0"
-  resolved "https://registry.yarnpkg.com/project-honeypot/-/project-honeypot-0.0.0.tgz#1ee6be9ad23f8dfa57626d7f11ab64bfa5869b91"
-  integrity sha1-Hua+mtI/jfpXYm1/Eatkv6WGm5E=
-
 promise-polyfill@^8.1.3:
   version "8.2.0"
   resolved "https://registry.yarnpkg.com/promise-polyfill/-/promise-polyfill-8.2.0.tgz#367394726da7561457aba2133c9ceefbd6267da0"
@@ -7218,7 +7123,7 @@ punycode@^2.1.0, punycode@^2.1.1:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
 
-q@^1.4.1, q@^1.5.1:
+q@^1.5.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
   integrity sha1-fjL3W0E4EpHQRhHxvxQQmsAGUdc=
@@ -7507,7 +7412,7 @@ request-promise-native@^1.0.8:
     stealthy-require "^1.1.1"
     tough-cookie "^2.3.3"
 
-request@2.88.2, request@2.x, request@^2.67.0, request@^2.88.0, request@^2.88.2:
+request@2.88.2, request@^2.67.0, request@^2.88.0, request@^2.88.2:
   version "2.88.2"
   resolved "https://registry.yarnpkg.com/request/-/request-2.88.2.tgz#d73c918731cb5a87da047e207234146f664d12b3"
   integrity sha512-MsvtOrfG9ZcrOwAW+Qi+F6HbD0CWXEh9ou77uOb7FM2WPhwT7smM833PzanhJLsgXjN89Ir6V2PczXNnMpwKhw==
@@ -7927,11 +7832,6 @@ simple-get@^4.0.0:
     once "^1.3.1"
     simple-concat "^1.0.0"
 
-simple-recaptcha-new@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/simple-recaptcha-new/-/simple-recaptcha-new-1.1.1.tgz#89814422110af17774bc4ca3c292a1526df59c38"
-  integrity sha1-iYFEIhEK8Xd0vEyjwpKhUm31nDg=
-
 simple-swizzle@^0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/simple-swizzle/-/simple-swizzle-0.2.2.tgz#a4da6b635ffcccca33f70d17cb92592de95e557a"
@@ -8284,17 +8184,6 @@ stealthy-require@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/stealthy-require/-/stealthy-require-1.1.1.tgz#35b09875b4ff49f26a777e509b3090a3226bf24b"
   integrity sha1-NbCYdbT/SfJqd35QmzCQoyJr8ks=
-
-stopforumspam@^1.1.0:
-  version "1.3.7"
-  resolved "https://registry.yarnpkg.com/stopforumspam/-/stopforumspam-1.3.7.tgz#adf846576d7c06427b54bea1e5bea801b17cc13b"
-  integrity sha512-If9oymubGymbGVboGYlw6L3J3xHDqAbIenOFAjr5TJL5DpSnAY2vJf/JBLZXmzjzCidGoijnB1QKDLygu6DChw==
-  dependencies:
-    lodash "^4.17.20"
-    q "^1.4.1"
-    request "^2.88.2"
-    utf8 "^3.0.0"
-    validator "^11.1.0"
 
 streamsearch@0.1.2:
   version "0.1.2"
@@ -9039,11 +8928,6 @@ use@^3.1.0:
   resolved "https://registry.yarnpkg.com/use/-/use-3.1.1.tgz#d50c8cac79a19fbc20f2911f56eb973f4e10070f"
   integrity sha512-cwESVXlO3url9YWlFW/TA9cshCEhtu7IKJ/p5soJ/gGpj7vbvFrAY/eIioQ6Dw23KjZhYgiIo8HOs1nQ2vr/oQ==
 
-utf8@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/utf8/-/utf8-3.0.0.tgz#f052eed1364d696e769ef058b183df88c87f69d1"
-  integrity sha512-E8VjFIQ/TyQgp+TZfS6l8yp/xWppSAHzidGiRrqe4bK4XP9pTRyKFgGJpO3SN7zdX4DeomTrwaseCHovfpFcqQ==
-
 util-deprecate@^1.0.1, util-deprecate@^1.0.2, util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
@@ -9113,11 +8997,6 @@ validator@13.5.2, validator@^13.1.17:
   version "13.5.2"
   resolved "https://registry.yarnpkg.com/validator/-/validator-13.5.2.tgz#c97ae63ed4224999fb6f42c91eaca9567fe69a46"
   integrity sha512-mD45p0rvHVBlY2Zuy3F3ESIe1h5X58GPfAtslBjY7EtTqGquZTj+VX/J4RnHWN8FKq0C9WRVt1oWAcytWRuYLQ==
-
-validator@^11.1.0:
-  version "11.1.0"
-  resolved "https://registry.yarnpkg.com/validator/-/validator-11.1.0.tgz#ac18cac42e0aa5902b603d7a5d9b7827e2346ac4"
-  integrity sha512-qiQ5ktdO7CD6C/5/mYV4jku/7qnqzjrxb3C/Q5wR3vGGinHTgJZN/TdFT3ZX4vXhX2R1PXx42fB1cn5W+uJ4lg==
 
 validator@^12.0.0:
   version "12.2.0"
