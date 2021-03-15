@@ -19,3 +19,5 @@ test/
 .jshintrc
 .mocharc.yml
 docker-compose.yml
+yarn.lock
+nodebb.bat
