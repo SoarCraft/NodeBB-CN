@@ -1,5 +1,5 @@
 {
-  "url": "http://nodebb-cn.azurewebsites.net",
+  "url": "https://nodebb-cn.azurewebsites.net",
   "secret": "a7088c70-372a-4442-8514-02c9caee9be5",
   "database": "mongo",
   "port": "4567",
