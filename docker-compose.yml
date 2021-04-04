@@ -3,7 +3,7 @@ version: '3.5'
 services:
   node:
     build: .
-    image: NodeBBCN.azurecr.io/nodebb
+    image: NodeBB.azurecr.io/nodebb
     restart: unless-stopped
     depends_on:
       - search
@@ -23,7 +23,7 @@ services:
 
   proxy:
     build: ./nginx
-    image: NodeBBCN.azurecr.io/proxy
+    image: NodeBB.azurecr.io/proxy
     restart: unless-stopped
     ports:
       - 80:80
